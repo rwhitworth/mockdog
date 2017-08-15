@@ -54,5 +54,5 @@ def process(msg):
 if __name__ == "__main__":
     sock = bind_udp()
     while True:
-        data, addr = sock.recvfrom(1024)
+        data, addr = sock.recvfrom(65507)
         process(data.decode("utf-8"))
